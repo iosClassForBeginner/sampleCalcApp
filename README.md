@@ -19,13 +19,13 @@
 
 ## アプリ作成手順
 #### 1, Storyboardで、アプリのデザイン
-> 1-1. main.storyboardを選択し、UI部品からtextfield, label, buttonを配置します。
+> 1-1. main.storyboardを選択し、UI部品からtextfield, label, buttonを配置します。(ドラッグ&ドロップ)
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/sampleCalcApp/blob/master/Assets/001.gif" /></div>
 
 > 1-2. StoryboardからViewcontroller.swiftにtextfield, label, buttonを紐付けます。
-- textfield, labelの紐付け方
+- textfield, labelの紐付け方(control押しながらドラッグ)
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/sampleCalcApp/blob/master/Assets/002.gif" /></div>
-- buttonの紐付け方
+- buttonの紐付け方(control押しながらドラッグ)
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/sampleCalcApp/blob/master/Assets/003.gif" /></div>
 
 #### 2, ViewController.swiftにコード記述
