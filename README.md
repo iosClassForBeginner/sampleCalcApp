@@ -25,35 +25,33 @@
 > 1-2. StoryboardからViewcontroller.swiftにtextfield, label, buttonを紐付けます。
 - textfield, labelの紐付け方
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/sampleCalcApp/blob/master/Assets/002.gif" /></div>
-
 - buttonの紐付け方
 <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/sampleCalcApp/blob/master/Assets/003.gif" /></div>
 
 #### 2, ViewController.swiftにコード記述
 - 以下コードブロックを記入
   
-> 数値のみ入力するため
+- 数値のみ入力するため
+
 ```Swift
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         // 数値のみ入力
         leftText.keyboardType = .numberPad
         rightText.keyboardType = .numberPad
     }
 ```
-> 数値計算部分
+- 数値計算部分
+
 ```Swift
     @IBAction func equal(_ sender: AnyObject) {
         // キーボード閉じる
         self.view.endEditing(true)
-
         let leftNum = Int(leftText.text!) ?? 0
         let rightNum = Int(rightText.text!) ?? 0
         let sumNum = leftNum + rightNum
         answerLabel.text = "\(sumNum)"
-        
         leftText.text = ""
         rightText.text = ""
     }
