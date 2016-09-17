@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleCalcApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdb-68-roK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="lGa-ex-g6Q"/>
+                                    <constraint firstAttribute="height" constant="50" id="nty-HU-Qjz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-Yp-Qfl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Svh-Xb-ads"/>
+                                    <constraint firstAttribute="width" constant="50" id="nyJ-E6-84K"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-be-t3h">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8oe-mA-2OH"/>
+                                    <constraint firstAttribute="width" constant="40" id="UbM-CT-Uxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-hw-ddh">
+                                <color key="backgroundColor" red="0.70485736335652849" green="0.71284054487179493" blue="0.65494838723336635" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ga0-FK-Ld4"/>
+                                    <constraint firstAttribute="width" constant="120" id="ne5-01-5Eo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSz-Ub-BiC">
+                                <color key="backgroundColor" red="0.35275130810820221" green="1" blue="0.94176674251393633" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hpg-Gs-4Is"/>
+                                    <constraint firstAttribute="width" constant="50" id="q7x-xo-RjM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlO-Vr-AmS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-Ga-ddT">
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kSL-be-t3h" firstAttribute="top" secondItem="Gdm-Ga-ddT" secondAttribute="bottom" constant="40" id="0Nb-1u-7qT"/>
+                            <constraint firstAttribute="trailing" secondItem="Gdm-Ga-ddT" secondAttribute="trailing" id="0wc-2n-Rol"/>
+                            <constraint firstItem="Eup-Yp-Qfl" firstAttribute="top" secondItem="Gdm-Ga-ddT" secondAttribute="bottom" constant="40" id="5gA-ib-Qnl"/>
+                            <constraint firstItem="rdb-68-roK" firstAttribute="top" secondItem="Gdm-Ga-ddT" secondAttribute="bottom" constant="40" id="6id-pd-ROQ"/>
+                            <constraint firstItem="Gdm-Ga-ddT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QCc-P4-oBW"/>
+                            <constraint firstItem="Gdm-Ga-ddT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="QSH-Je-hYu"/>
+                            <constraint firstItem="vSz-Ub-BiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZ4-ay-ilr"/>
+                            <constraint firstItem="vSz-Ub-BiC" firstAttribute="top" secondItem="kSL-be-t3h" secondAttribute="bottom" constant="40" id="dLc-BJ-KT6"/>
+                            <constraint firstItem="Eup-Yp-Qfl" firstAttribute="leading" secondItem="kSL-be-t3h" secondAttribute="trailing" constant="10" id="giP-HW-EWT"/>
+                            <constraint firstItem="kSL-be-t3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hGG-tb-645"/>
+                            <constraint firstItem="Gag-hw-ddh" firstAttribute="top" secondItem="vSz-Ub-BiC" secondAttribute="bottom" constant="40" id="hww-CL-qYO"/>
+                            <constraint firstItem="Gdm-Ga-ddT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kKr-RF-Nvl"/>
+                            <constraint firstItem="Gag-hw-ddh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lno-5q-HXk"/>
+                            <constraint firstItem="kSL-be-t3h" firstAttribute="leading" secondItem="rdb-68-roK" secondAttribute="trailing" constant="10" id="s9d-rN-19d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Gag-hw-ddh" id="H86-Js-Jiq"/>
+                        <outlet property="leftText" destination="rdb-68-roK" id="oX2-JH-Gdj"/>
+                        <outlet property="rightText" destination="Eup-Yp-Qfl" id="XDZ-a9-1gN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
